@@ -3,46 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Music Hub</title>
+    <title>Weather App</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <nav id="navbar">
         <div class="container">
-            <h1 class="logo">MusicHub</h1>
+            <h1 class="logo">WeatherApp</h1>
             <ul class="nav-links">
-                <li><a href="#featured">Featured</a></li>
-                <li><a href="#releases">Releases</a></li>
+                <li><a href="#current">Current Conditions</a></li>
+                <li><a href="#forecast">Forecast</a></li>
+                <li><a href="#location">Location</a></li>
             </ul>
             <div class="hamburger">☰</div>
         </div>
     </nav>
 
-    <section id="featured" class="section">
+    <section id="current" class="section">
         <div class="container">
-            <h2>Featured Artists</h2>
-            <div class="artist-grid">
-                <div class="artist-card">
-                    <div class="artist-img"></div>
-                    <h3>Artist Name</h3>
-                    <p>Latest single: Song Title</p>
-                </div>
-                <!-- More artist cards would go here -->
+            <h2>Current Conditions</h2>
+            <div id="current-conditions">
+                <!-- Current weather data will be displayed here -->
             </div>
         </div>
     </section>
 
-    <section id="releases" class="section">
+    <section id="forecast" class="section">
         <div class="container">
-            <h2>Latest Releases</h2>
-            <div class="release-grid">
-                <div class="release-card">
-                    <div class="album-cover"></div>
-                    <h3>Album Title</h3>
-                    <p>Artist Name</p>
-                </div>
-                <!-- More release cards would go here -->
+            <h2>5-Day Forecast</h2>
+            <div id="forecast-data">
+                <!-- Forecast data will be displayed here -->
             </div>
+        </div>
+    </section>
+
+    <section id="location" class="section">
+        <div class="container">
+            <h2>Get Weather by Location</h2>
+            <input type="text" id="location-input" placeholder="Enter location">
+            <button id="get-weather">Get Weather</button>
+            <button id="use-location">Use My Location</button>
         </div>
     </section>
 
